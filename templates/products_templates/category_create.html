@@ -1,0 +1,12 @@
+{% extends 'layout/base.html' %}
+  {% block title %}Products | Create category{% endblock title %}
+
+
+{% block content %}
+<h1>Create category</h1>
+<form method="POST" class="category_form" action="">
+  {% csrf_token %} {{ category_form }}
+  <input class="create-category_button" type="submit" value="Create" />
+</form>
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% load static %}
+<header>
+  <nav class="nav-container">
+    <a href="{% url 'Webhome' %}"><img  src="/static/images/logo-mercadona.png" alt="logo-mercadoña" /></a>
+    <ul class="menu-items-container">
+      <li><a href="{% url 'Webhome' %}">Home</a></li>
+      <li><a href="{% url 'product_create' %}">Create</a></li>
+      <li><a href="{% url 'categories' %}">Categories</a></li>
+    </ul>
+  </nav>
+</header>

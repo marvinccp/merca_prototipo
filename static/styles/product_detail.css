@@ -1,0 +1,75 @@
+.product-detail-container{
+    margin: 140px 0 0 0;
+    text-align: center;
+}
+.product-detail-container h3{
+    margin: 0 0 30px 0;
+   
+}
+
+.table-products-detail{
+    width: 93%;
+    margin: 0 auto;
+    background-color: rgba(166, 166, 166, 0.349);
+}
+
+.table-products-detail th {
+    margin: 0 auto;
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+    font-size: 0.9rem;
+    text-align: left;
+    text-indent: 12px;
+}
+
+.table-products-detail .column {
+    background-color: rgb(167, 167, 167);
+    color: aliceblue;
+}
+
+.options-container .delete-boton-container{
+
+    text-align: center;
+}
+.options-container .delete-boton-container a{
+
+    background-color: rgba(244, 62, 138, 0.736);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+.options-container .update-boton-container a{
+
+    background-color: rgba(242, 114, 64, 0.763);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 15px;
+    color: aliceblue;
+}
+.options-container .delete-boton-container a:hover{
+    background-color: rgb(244, 62, 138);
+}
+.options-container .update-boton-container a:hover{
+    background-color: rgb(242, 114, 64);
+}
+
+
+.options-container .update-boton-container{
+    
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .table-products th {
+
+        font-size: 0.9rem;
+    }
+
+    .table-products-detail {
+        width: 70%;
+    }
+
+}

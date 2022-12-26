@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %} 
+{% block title %}Products{% endblock title %}
+
+{%block content %}
+<main class="home-container">
+  <h4>Bienvenid@ al sistema de inventario de mercadoña</h4>
+  <section class="home-options-container">
+    <a href="{% url 'product_create' %}">
+      <span>Create product</span>
+      <img
+        class="products-admin-image"
+        src="/static/images/mejoramiento.png"
+        alt="products-store-section"
+    /></a>
+
+    <a href="categories">
+      <span>Consult categories</span>
+      <img
+        class="store-admin-image"
+        src="/static/images/aplicacion.png"
+        alt="admin-store-section"
+    /></a>
+  </section>
+</main>
+
+{% endblock content %}

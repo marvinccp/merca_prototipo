@@ -1,0 +1,21 @@
+{% extends 'layout/base.html' %} 
+{% block title %}Products | update {% endblock title %} 
+{% block content %}
+
+
+<div class='product-create-container'>
+<section class='main-products-create--home-container'>
+    <section class='header-products-create--home-container'>
+  <h3>Update product</h3>
+</section>
+ <form class='form-products-create' method="POST" class="product_form" action="">
+  {% csrf_token %} {{ form }}
+  <input class="update-category_button" type="submit" value="Update" />
+</form> 
+</section>
+
+
+</div>
+
+
+{% endblock content %}

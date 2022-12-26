@@ -1,0 +1,18 @@
+{% extends 'layout/base.html' %} 
+{% block title %}Products | categoryes {%endblock title %} 
+
+{% block content %}
+
+<div class="category-list-container">
+  <h3 class='category-list-title'>Categories List</h3>
+  <section class='category-images-container'>
+          {% for category in categories %}
+          <a  href="{% url 'category_detail' category=category.name %}">
+             <h5>{{ category }}</h5> 
+            <img src="/static/images/{{ category.name }}.png"/>
+        </a>
+          {% endfor %}   
+    </section>
+</div>
+
+{% endblock content %}

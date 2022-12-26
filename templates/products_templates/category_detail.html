@@ -1,0 +1,39 @@
+{% extends 'layout/base.html' %} 
+{% block title %}Products | category detail{%endblock title %} 
+
+{% block content %}
+<div class="category-products-container">
+  
+  <section class="category-detail-title-container">
+    <h3>{{ category }}</h3>
+    {% if messages %} {% for message in messages %}
+  <div class='success'>
+    <span {% if message.tags %} class="{{ message.tags}}" {% endif %}>
+      {{ message }}
+      </span>
+  </div>
+  {% endfor %} {% endif %}
+  </section>
+  <section class="section-two">
+    <table class="table-products">
+      <tr class="title-options-table">
+        <th class="title-options-table">Code</th>
+        <th class="title-options-table">Name</th>
+        <th class="title-options-table">format</th>
+        <th class="title-options-table">detail</th>
+      </tr>
+      {% for product in category_products %}
+      <tr>
+        <th>{{ product.code }}</th>
+        <th>{{ product.name }}</th>
+        <th>{{ product.format }}</th>
+        <th>
+          <a class="link-detail" href="{% url 'detail' id=product.id %}">Ver</a>
+        </th>
+      </tr>
+      {% endfor %}
+    </table>
+  </section>
+</div>
+
+{% endblock content %}

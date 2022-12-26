@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/global_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/menu_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/home_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/products_create_styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/category_list.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/category_detail.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/product_detail.css' %}">
+  
+</head>
+<body>
+    {% include 'layout/partials/menu.html' %}
+    {% block content %}{% endblock content %}
+    
+</body>
+</html>

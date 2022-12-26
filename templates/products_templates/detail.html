@@ -1,0 +1,45 @@
+{% extends 'layout/base.html' %} 
+{% block title %}Products | detail{% endblock title %} 
+
+{% block content %}
+<div class='product-detail-container'>
+<h3>Product Detail</h3>
+  <table class='table-products-detail'>
+    <tr>
+      <th class='column'>Id</th>
+      <th>{{ product.id }}</th>
+    </tr>
+    <tr>
+      <th class='column'>Name</th>
+      <th>{{ product.name }}</th>
+    </tr>
+    <tr>
+      <th class='column'>Category</th>
+      <th>{{ product.category }}</th>
+    </tr>
+    <tr>
+      <th class='column'>Code</th>
+      <th>{{ product.code }}</th>
+    </tr>
+    <tr>
+      <th class='column'>Quantity</th>
+      <th>{{ product.quantity }}</th>
+    </tr>
+    <tr>
+      <th class='column'>Notes</th>
+      <th>{{ product.notes }}</th>
+    </tr>
+    <tr>
+      <th class='column'>Format</th>
+      <th>{{ product.format  }}</th>
+    </tr>
+    <tr  class='options-container'>
+      <th class='delete-boton-container'>  <a class='delete-boton' href={% url 'product_delete' id=product.id  %}>delete</a>
+</th>
+      <th class='update-boton-container' >  <a class='update-boton' href={% url 'product_update' id=product.id  %}>update</a>
+</th>
+    </tr>
+  </table>
+
+</div>
+{% endblock content %}
