@@ -3,10 +3,14 @@
 
 
 {% block content %}
+<section class='category-create-container'>
 <h1>Create category</h1>
 <form method="POST" class="category_form" action="">
   {% csrf_token %} {{ category_form }}
   <input class="create-category_button" type="submit" value="Create" />
 </form>
+
+</section>
+
 
 {% endblock content %}

@@ -11,7 +11,7 @@
 <form class='form-products-create' method="POST" class="product_form" action="">
   {% csrf_token %} {{ product_form }}
   <input class="create-category_button" type="submit" value="Create" />
-  {% comment %} <a class='create-category-link' href="{% url 'category_create' %}">create category</a> {% endcomment %}
+  <a class='create-category-link' href="{% url 'category_create' %}">create category</a> 
 </form>
 </section>
 

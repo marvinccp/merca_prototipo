@@ -10,8 +10,8 @@ class CategoryForm(ModelForm):
         model = Category
         fields = ('__all__')
         widgets = {
-            'name': forms.TextInput(attrs={'class': 'name-category-field'}),
-            'code': forms.TextInput(attrs={'class': 'code-category-field'})
+            'name': forms.TextInput(attrs={'class': 'name-category-field field'}),
+            'code': forms.TextInput(attrs={'class': 'code-category-field field'})
         }
 
 
