@@ -10,12 +10,10 @@
 </section>
 <form class='form-products-create' method="POST" class="product_form" action="">
   {% csrf_token %} {{ product_form }}
-  <input class="create-category_button" type="submit" value="Create" />
+  <input class="create-product_button" type="submit" value="Create" />
   <a class='create-category-link' href="{% url 'category_create' %}">create category</a> 
 </form>
 </section>
-
-
 </div>
 
 
